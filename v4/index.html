@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Алексей Рыболовлев — ИИ-право</title>
+<meta name="description" content="Юрист по ИИ и автономным AI-агентам." />
+<style>
+  :root{--bg:#f5f3ee;--ink:#141414;--muted:#6a665e;--accent:#e2563b;--line:#d9d4ca}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+  a{color:inherit;text-decoration:none}
+  nav{display:flex;justify-content:space-between;align-items:baseline;padding:28px 0;border-bottom:2px solid var(--ink);font-size:14px;text-transform:uppercase;letter-spacing:.08em}
+  nav .menu a{margin-left:24px;color:var(--muted)}nav .menu a:hover{color:var(--accent)}
+  .hero{padding:70px 0 40px}
+  .hero .meta{display:flex;justify-content:space-between;flex-wrap:wrap;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:30px}
+  h1{font-size:clamp(46px,11vw,140px);line-height:.92;letter-spacing:-.04em;font-weight:800;text-transform:uppercase}
+  h1 em{font-style:normal;color:var(--accent)}
+  .hero .row{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-top:26px}
+  .hero .row p{font-size:20px;max-width:480px;color:#2c2a26}
+  .btn{border:2px solid var(--ink);padding:15px 28px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:14px;white-space:nowrap}
+  .btn:hover{background:var(--ink);color:var(--bg)}
+  section{padding:56px 0;border-top:2px solid var(--ink)}
+  .kicker{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:30px}
+  .svc-row{display:grid;grid-template-columns:60px 1fr 1.4fr;gap:24px;padding:22px 0;border-top:1px solid var(--line);align-items:baseline}
+  .svc-row .num{font-size:18px;color:var(--muted)}
+  .svc-row h3{font-size:26px;letter-spacing:-.01em}
+  .svc-row p{color:var(--muted);font-size:16px}
+  .about{font-size:clamp(24px,3.4vw,40px);line-height:1.25;letter-spacing:-.01em;max-width:900px;font-weight:600}
+  .about em{font-style:normal;color:var(--accent)}
+  .contact{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px}
+  .contact h2{font-size:clamp(32px,6vw,72px);text-transform:uppercase;letter-spacing:-.03em;line-height:.95;font-weight:800}
+  footer{padding:26px 0;border-top:2px solid var(--ink);font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  @media(max-width:680px){.svc-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><b>Рыболовлев</b><div class="menu"><a href="#about">О себе</a><a href="#services">Услуги</a><a href="#contact">Связь</a></div></nav>
+
+  <header class="hero">
+    <div class="meta"><span>Юрист · ИИ-право</span><span>AI-агенты</span><span>rybolovlev.dev</span></div>
+    <h1>Право<br>для <em>AI-<br>агентов</em></h1>
+    <div class="row">
+      <p>Юрист на стыке права и технологий. Делаю автономные AI-системы юридически безопасными — для тех, кто их создаёт и внедряет.</p>
+      <a class="btn" href="#contact">Написать →</a>
+    </div>
+  </header>
+</div>
+
+<div class="wrap">
+  <section id="about">
+    <div class="kicker">— О себе</div>
+    <p class="about">Понимаю, как работают <em>LLM, оркестрация агентов и tool-calling</em>, — и перевожу это в договоры, гарантии и комплаенс. Закрываю риски <em>до</em> того, как они станут спором.</p>
+  </section>
+
+  <section id="services">
+    <div class="kicker">— Услуги</div>
+    <div class="svc-row"><div class="num">01</div><h3>Договоры на агентов</h3><p>Разработка и внедрение: границы автономии, SLA, приёмка, гарантии.</p></div>
+    <div class="svc-row"><div class="num">02</div><h3>Ответственность</h3><p>Кто отвечает за действия автономного агента — распределение рисков.</p></div>
+    <div class="svc-row"><div class="num">03</div><h3>IP &amp; данные</h3><p>Права на модели, промпты, датасеты; персональные данные в пайплайнах.</p></div>
+    <div class="svc-row"><div class="num">04</div><h3>Комплаенс</h3><p>Требования РФ и EU AI Act, оценка рисков, внутренние политики.</p></div>
+    <div class="svc-row"><div class="num">05</div><h3>Споры</h3><p>Досудебное урегулирование и суд по проектам с ИИ.</p></div>
+  </section>
+
+  <section id="contact">
+    <div class="kicker">— Связь</div>
+    <div class="contact">
+      <h2>Обсудим<br>проект?</h2>
+      <a class="btn" href="mailto:hello@rybolovlev.dev">hello@rybolovlev.dev</a>
+    </div>
+  </section>
+
+  <footer><span>© <span id="y"></span> Алексей Рыболовлев</span><span>ИИ-право · AI-агенты</span></footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Алексей Рыболовлев — AI-agent law</title>
+<meta name="description" content="Юрист по ИИ и автономным AI-агентам. Договоры, ответственность, IP, данные, комплаенс." />
+<style>
+  :root{--bg:#0a0c12;--card:#11141d;--text:#eaf0ff;--muted:#8b94ad;--line:#1e2433;--cyan:#46e0d0;--violet:#9a7bff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;
+    background-image:radial-gradient(700px 380px at 85% -5%,rgba(154,123,255,.18),transparent 60%),radial-gradient(600px 340px at -5% 20%,rgba(70,224,208,.14),transparent 60%)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+  a{color:inherit;text-decoration:none}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+  .brand{font-weight:800;letter-spacing:-.01em}
+  .brand .dot{color:var(--cyan)}
+  .menu{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+  .menu a:hover{color:var(--text)}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,monospace}
+  .hero{padding:96px 0 64px}
+  .tag{display:inline-block;font-size:12px;letter-spacing:.12em;color:var(--cyan);border:1px solid var(--line);border-radius:999px;padding:7px 14px;margin-bottom:26px}
+  h1{font-size:clamp(36px,6.5vw,66px);line-height:1.05;letter-spacing:-.03em;font-weight:800}
+  h1 .grad{background:linear-gradient(100deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{margin-top:22px;font-size:19px;color:var(--muted);max-width:600px}
+  .cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+  .btn{padding:14px 26px;border-radius:12px;font-size:15px;font-weight:600}
+  .btn.p{background:linear-gradient(100deg,var(--cyan),var(--violet));color:#08111a}
+  .btn.g{border:1px solid var(--line);color:var(--text)}
+  .btn:hover{transform:translateY(-2px)}
+  .btn{transition:transform .15s ease}
+  section{padding:60px 0;border-top:1px solid var(--line)}
+  .lbl{font-size:13px;letter-spacing:.14em;color:var(--violet);margin-bottom:24px;text-transform:uppercase}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card h3{font-size:18px;margin-bottom:8px}
+  .card p{font-size:14.5px;color:var(--muted)}
+  .card .n{font-family:ui-monospace,monospace;font-size:13px;color:var(--cyan)}
+  .about p{font-size:21px;max-width:760px;color:#c7d0e6}
+  .stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;min-width:150px}
+  .stat b{font-size:28px;display:block}.stat span{font-size:13px;color:var(--muted)}
+  .contact h2{font-size:34px;letter-spacing:-.02em;margin-bottom:18px}
+  footer{padding:34px 0;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="brand mono">rybolovlev<span class="dot">.dev</span></div>
+    <div class="menu"><a href="#about">/about</a><a href="#services">/services</a><a href="#contact">/contact</a></div>
+  </nav>
+
+  <header class="hero">
+    <span class="tag mono">AI-agent law · ИИ-право</span>
+    <h1>Юридический слой для <span class="grad">автономных<br>AI-агентов</span></h1>
+    <p>Помогаю командам безопасно строить и внедрять агентные системы: контракты, ответственность, IP, данные и комплаенс — без блокеров для продукта.</p>
+    <div class="cta">
+      <a class="btn p" href="#contact">Обсудить проект</a>
+      <a class="btn g" href="#services">Услуги →</a>
+    </div>
+  </header>
+</div>
+
+<div class="wrap">
+  <section id="about" class="about">
+    <div class="lbl mono">// about</div>
+    <p>Я знаю, как работают LLM, оркестрация агентов, tool-calling и RAG. Поэтому перевожу техническую архитектуру в юридические гарантии — и закрываю риски до релиза.</p>
+    <div class="stats mono">
+      <div class="stat"><b>10+</b><span>лет в IT-праве</span></div>
+      <div class="stat"><b>50+</b><span>AI-проектов</span></div>
+      <div class="stat"><b>&lt;3ч</b><span>время ответа</span></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="lbl mono">// services</div>
+    <div class="grid">
+      <div class="card"><div class="n mono">01</div><h3>Договоры на агентов</h3><p>Разработка/внедрение, границы автономии, SLA, приёмка, гарантии.</p></div>
+      <div class="card"><div class="n mono">02</div><h3>Ответственность</h3><p>Распределение рисков за действия автономного агента.</p></div>
+      <div class="card"><div class="n mono">03</div><h3>IP & данные</h3><p>Права на модели, промпты, датасеты; ПДн в пайплайнах.</p></div>
+      <div class="card"><div class="n mono">04</div><h3>Комплаенс</h3><p>Требования РФ и EU AI Act, оценка рисков, политики.</p></div>
+      <div class="card"><div class="n mono">05</div><h3>Лицензирование</h3><p>Модели, API, open-source, условия использования.</p></div>
+      <div class="card"><div class="n mono">06</div><h3>Споры</h3><p>Досудебка и суд по проектам с ИИ.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="lbl mono">// contact</div>
+    <h2>Готов помочь с вашим AI-агентом.</h2>
+    <div class="cta">
+      <a class="btn p" href="mailto:hello@rybolovlev.dev">hello@rybolovlev.dev</a>
+      <a class="btn g" href="https://t.me/username">Telegram</a>
+    </div>
+  </section>
+
+  <footer class="mono">© <span id="y"></span> Алексей Рыболовлев · built on the edge</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
