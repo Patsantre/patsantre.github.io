@@ -26,9 +26,10 @@
   .role{margin-top:14px;font-size:clamp(17px,3.4vw,21px);
     background:linear-gradient(100deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
   .soon{margin-top:22px;color:var(--muted);font-size:17px}
-  .mail{display:inline-block;margin-top:30px;text-decoration:none;color:var(--text);font-weight:600;
+  .contacts{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;color:var(--text);font-weight:600;
     border:1px solid var(--line);border-radius:999px;padding:12px 24px;transition:border-color .15s,color .15s}
-  .mail:hover{border-color:var(--cyan);color:var(--cyan)}
+  .btn:hover{border-color:var(--cyan);color:var(--cyan)}
   footer{position:fixed;bottom:22px;left:0;right:0;color:var(--muted);font-size:13px}
 </style>
 </head>
@@ -38,7 +39,10 @@
     <h1>Алексей Рыболовлев</h1>
     <div class="role">Юрист по ИИ и автономным AI-агентам</div>
     <p class="soon">Полноценный сайт скоро откроется. Пока — по вопросам пишите на почту.</p>
-    <a class="mail" href="mailto:hello@rybolovlev.dev">hello@rybolovlev.dev</a>
+    <div class="contacts">
+      <a class="btn" href="mailto:alexey@rybolovlev.dev">alexey@rybolovlev.dev</a>
+      <!-- TELEGRAM: добавлю кнопку, как только пришлёшь @username -->
+    </div>
   </main>
   <footer>© <span id="y"></span> rybolovlev.dev</footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
