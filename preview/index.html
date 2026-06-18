@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Варианты одностраничника — выбор стиля</title>
+<meta name="robots" content="noindex" />
+<style>
+  :root{--bg:#0f1115;--card:#1a1e29;--text:#e9ecf3;--muted:#9aa3b5;--line:#2a3040;--accent:#6ea8fe}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:48px 24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:30px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:10px 0 36px;max-width:640px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  a.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:transform .15s ease,border-color .15s ease}
+  a.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  .card h2{font-size:20px;margin:8px 0 6px}
+  .card p{font-size:14.5px;color:var(--muted)}
+  .card .go{margin-top:14px;font-size:14px;font-weight:600;color:var(--accent)}
+  footer{color:var(--muted);font-size:13px;margin-top:40px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Одностраничник «юрист по ИИ / AI-агентам» — 4 варианта</h1>
+  <p class="sub">Выбери стиль — соберём финальную страницу на его основе и подключим домен. Все варианты адаптивны (открой и с телефона). Текст и контакты — заглушки.</p>
+  <div class="grid">
+    <a class="card" href="/v1/">
+      <div class="tag">Вариант 1</div>
+      <h2>Минимал-премиум</h2>
+      <p>Светлый, серифная типографика, золото + тёмно-синий. Классический «адвокатский» trust в современном исполнении.</p>
+      <div class="go">Открыть →</div>
+    </a>
+    <a class="card" href="/v2/">
+      <div class="tag">Вариант 2</div>
+      <h2>Тёмный tech / AI</h2>
+      <p>Тёмная тема, неоновый градиент, моноширинные акценты. Подчёркивает технологичность и нишу AI-агентов.</p>
+      <div class="go">Открыть →</div>
+    </a>
+    <a class="card" href="/v3/">
+      <div class="tag">Вариант 3</div>
+      <h2>Корпоративный конверсионный</h2>
+      <p>Бело-синий, цены «от …», этапы работы, форма заявки и trust-бейджи. Заточен под заявки.</p>
+      <div class="go">Открыть →</div>
+    </a>
+    <a class="card" href="/v4/">
+      <div class="tag">Вариант 4</div>
+      <h2>Editorial / типографика</h2>
+      <p>Крупный шрифт, асимметрия, журнальный стиль, один яркий акцент. Сильный личный бренд.</p>
+      <div class="go">Открыть →</div>
+    </a>
+  </div>
+  <footer>Черновик для выбора стиля · rybolovlev.dev</footer>
+</div>
+</body>
+</html>

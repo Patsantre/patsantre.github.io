@@ -3,56 +3,44 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Варианты одностраничника — выбор стиля</title>
-<meta name="robots" content="noindex" />
+<title>Алексей Рыболовлев — юрист по ИИ и AI-агентам</title>
+<meta name="description" content="Юрист по искусственному интеллекту и автономным AI-агентам. Сайт скоро откроется." />
+<meta name="yandex-verification" content="404ca768564faf2e" />
 <style>
-  :root{--bg:#0f1115;--card:#1a1e29;--text:#e9ecf3;--muted:#9aa3b5;--line:#2a3040;--accent:#6ea8fe}
+  :root{--bg:#0a0c12;--text:#eaf0ff;--muted:#8b94ad;--cyan:#46e0d0;--violet:#9a7bff;--line:#1e2433}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:48px 24px}
-  .wrap{max-width:980px;margin:0 auto}
-  h1{font-size:30px;letter-spacing:-.01em}
-  .sub{color:var(--muted);margin:10px 0 36px;max-width:640px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-  a.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:transform .15s ease,border-color .15s ease}
-  a.card:hover{transform:translateY(-3px);border-color:var(--accent)}
-  .tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
-  .card h2{font-size:20px;margin:8px 0 6px}
-  .card p{font-size:14.5px;color:var(--muted)}
-  .card .go{margin-top:14px;font-size:14px;font-weight:600;color:var(--accent)}
-  footer{color:var(--muted);font-size:13px;margin-top:40px}
+  html,body{height:100%}
+  body{
+    font-family:-apple-system,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text);
+    display:grid;place-items:center;text-align:center;padding:32px;line-height:1.6;
+    background-image:
+      radial-gradient(760px 420px at 80% -10%,rgba(154,123,255,.20),transparent 60%),
+      radial-gradient(640px 360px at -5% 110%,rgba(70,224,208,.16),transparent 60%);
+  }
+  .wrap{max-width:600px}
+  .status{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:8px 16px;margin-bottom:30px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 0 rgba(70,224,208,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(70,224,208,.55)}70%{box-shadow:0 0 0 10px rgba(70,224,208,0)}100%{box-shadow:0 0 0 0 rgba(70,224,208,0)}}
+  h1{font-size:clamp(34px,7vw,56px);letter-spacing:-.03em;font-weight:800;line-height:1.05}
+  .role{margin-top:14px;font-size:clamp(17px,3.4vw,21px);
+    background:linear-gradient(100deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+  .soon{margin-top:22px;color:var(--muted);font-size:17px}
+  .mail{display:inline-block;margin-top:30px;text-decoration:none;color:var(--text);font-weight:600;
+    border:1px solid var(--line);border-radius:999px;padding:12px 24px;transition:border-color .15s,color .15s}
+  .mail:hover{border-color:var(--cyan);color:var(--cyan)}
+  footer{position:fixed;bottom:22px;left:0;right:0;color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>Одностраничник «юрист по ИИ / AI-агентам» — 4 варианта</h1>
-  <p class="sub">Выбери стиль — соберём финальную страницу на его основе и подключим домен. Все варианты адаптивны (открой и с телефона). Текст и контакты — заглушки.</p>
-  <div class="grid">
-    <a class="card" href="v1/">
-      <div class="tag">Вариант 1</div>
-      <h2>Минимал-премиум</h2>
-      <p>Светлый, серифная типографика, золото + тёмно-синий. Классический «адвокатский» trust в современном исполнении.</p>
-      <div class="go">Открыть →</div>
-    </a>
-    <a class="card" href="v2/">
-      <div class="tag">Вариант 2</div>
-      <h2>Тёмный tech / AI</h2>
-      <p>Тёмная тема, неоновый градиент, моноширинные акценты. Подчёркивает технологичность и нишу AI-агентов.</p>
-      <div class="go">Открыть →</div>
-    </a>
-    <a class="card" href="v3/">
-      <div class="tag">Вариант 3</div>
-      <h2>Корпоративный конверсионный</h2>
-      <p>Бело-синий, цены «от …», этапы работы, форма заявки и trust-бейджи. Заточен под заявки.</p>
-      <div class="go">Открыть →</div>
-    </a>
-    <a class="card" href="v4/">
-      <div class="tag">Вариант 4</div>
-      <h2>Editorial / типографика</h2>
-      <p>Крупный шрифт, асимметрия, журнальный стиль, один яркий акцент. Сильный личный бренд.</p>
-      <div class="go">Открыть →</div>
-    </a>
-  </div>
-  <footer>Черновик для выбора стиля · rybolovlev.dev</footer>
-</div>
+  <main class="wrap">
+    <span class="status"><span class="dot"></span>Сайт в разработке</span>
+    <h1>Алексей Рыболовлев</h1>
+    <div class="role">Юрист по ИИ и автономным AI-агентам</div>
+    <p class="soon">Полноценный сайт скоро откроется. Пока — по вопросам пишите на почту.</p>
+    <a class="mail" href="mailto:hello@rybolovlev.dev">hello@rybolovlev.dev</a>
+  </main>
+  <footer>© <span id="y"></span> rybolovlev.dev</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
